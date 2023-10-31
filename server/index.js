@@ -11,7 +11,7 @@ const auth = require("./routes/authRoutes");
 
 app.use(
   cors({
-    origin: "https://chemicalstore.netlify.app", 
+    origin: "https://stock-store-gtxj.vercel.app/", 
     credentials: true,
   })
 );
