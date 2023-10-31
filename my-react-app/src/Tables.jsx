@@ -177,7 +177,7 @@ const Tables = () => {
   const fetchDataFromBackend = async () => {
     try {
       axios.defaults.withCredentials = true;
-      const response = await axios.get("http://localhost:3001/chemicals", { withCredentials: true });
+      const response = await axios.get("https://stock-store.onrender.com/chemicals", { withCredentials: true });
       console.log(response)
       if (response) {
         setTableData(response.data);

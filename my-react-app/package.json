@@ -1,7 +1,7 @@
 {
   "name": "my-react-app",
   "version": "0.1.0",
-  "proxy": "https://stockstore12.onrender.com/",
+  "proxy": "https://stock-store.onrender.com/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
