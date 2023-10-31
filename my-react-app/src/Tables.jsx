@@ -163,7 +163,7 @@ const Tables = () => {
     axios.defaults.withCredentials = true;
     const quantityRemoved = parseInt(quantityToRemove);
     axios
-      .post(`/chemicals/remove/${chemicalName}`, { quantityRemoved })
+      .post(`/chemicals/remove/${chemicalName}`, { quantityRemoved }, { withCredentials: true })
       .then((response) => {
         // Handle success, e.g., update the state or display a success message
         console.log(response.data);

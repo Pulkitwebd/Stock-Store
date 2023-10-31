@@ -11,7 +11,7 @@ const auth = require("./routes/authRoutes");
 
 app.use(
   cors({
-    origin: "http://localhost:3000", 
+    origin: "https://chemicalstore.netlify.app", 
     credentials: true,
   })
 );
