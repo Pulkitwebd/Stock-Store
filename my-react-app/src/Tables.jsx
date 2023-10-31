@@ -177,8 +177,11 @@ const Tables = () => {
   const fetchDataFromBackend = async () => {
     try {
       axios.defaults.withCredentials = true;
-      const response = await axios.get("https://stock-store.onrender.com/chemicals", { withCredentials: true });
-      console.log(response)
+      const response = await axios.get(
+        "https://stock-store.onrender.com/chemicals",
+        { withCredentials: true }
+      );
+      console.log(response);
       if (response) {
         setTableData(response.data);
       } else {
@@ -203,14 +206,10 @@ const Tables = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-dark">
         <div className="container-fluid">
           <h4>
-            <a className="navbar-brand2" href="#">
-              StockManagement
-            </a>
+            <button className="navbar-brand2">StockManagement</button>
           </h4>
           <h5>
-            <a className="navbar-brand1" href="#">
-              Home
-            </a>
+            <button className="navbar-brand1">Home</button>
           </h5>
           <button
             className="navbar-toggler"
@@ -226,9 +225,7 @@ const Tables = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link-disabled" href="#" onClick="">
-                  Log Out
-                </a>
+                <button className="nav-link-disabled">Log Out</button>
               </li>
             </ul>
           </div>
