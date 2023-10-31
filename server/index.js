@@ -9,7 +9,12 @@ app.use(express.json());
 
 const auth = require("./routes/authRoutes");
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://stock-store-gtxj.vercel.app", 
+    credentials: true
+  })
+);
 
 app.use(auth);
 app.use(bodyParser.json());
